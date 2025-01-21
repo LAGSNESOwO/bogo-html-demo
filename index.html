@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猴子排序演示</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        #output {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .array-container {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .performance {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>猴子排序演示</h2>
+    
+    <label for="numCount">选择元素数量(最大一千，不建议设置超过10): </label>
+    <input type="number" id="numCount" value="3" min="1" max="1000">
+    
+    <label for="intervalTime">每隔多少毫秒排序一次(默认10毫秒，不建议更改): </label>
+    <input type="number" id="intervalTime" value="10" min="1" max="1000">
+    
+    <button id="startButton" onclick="startSort()">开始排序</button>
+
+    <div id="output"></div>
+    <div class="array-container" id="arrayContainer"></div>
+    <div class="performance" id="performance"></div>
+
+    <script src="monkeySort.js"></script>
+
+</body>
+</h
+  tml>
